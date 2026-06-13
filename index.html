@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>METE ELEKTRONİK | Güvenlik ve Elektronik Sistemleri</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop')
+    center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.hero-content p{
+    font-size:22px;
+    max-width:900px;
+    margin:auto;
+    margin-bottom:35px;
+    color:#e2e8f0;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:translateY(-4px);
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+    color:#38bdf8;
+}
+
+/* ABOUT */
+
+.about{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    font-size:20px;
+    color:#cbd5e1;
+}
+
+/* SERVICES */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:18px;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    max-width:850px;
+    margin:auto;
+    background:#1e293b;
+    padding:45px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.contact-box p{
+    margin:18px 0;
+    font-size:20px;
+    color:#e2e8f0;
+}
+
+/* FOOTER */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <nav>
+
+        <div class="logo">METE ELEKTRONİK</div>
+
+        <ul>
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="anasayfa">
+
+    <div class="hero-content">
+
+        <h1>METE ELEKTRONİK</h1>
+
+        <p>
+            LED TV Tamiri • Ekran Değişimi • Kamera ve Güvenlik Sistemleri •
+            Dijital Uydu Sistemleri • Oto Ses Sistemleri
+        </p>
+
+        <a href="#iletisim" class="btn">Hemen İletişime Geç</a>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="hakkimizda">
+
+    <div class="container">
+
+        <h2 class="section-title">Hakkımızda</h2>
+
+        <div class="about">
+
+            <p>
+                METE ELEKTRONİK olarak elektronik ve güvenlik sistemleri alanında
+                profesyonel hizmet vermekteyiz. LED TV tamiri, ekran değişimi,
+                güvenlik kamera sistemleri, uydu sistemleri ve oto ses sistemleri
+                konusunda kaliteli hizmet anlayışı ile müşterilerimize çözüm sunuyoruz.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="hizmetler">
+
+    <div class="container">
+
+        <h2 class="section-title">Faaliyet Alanlarımız</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>LED TV Tamiri</h3>
+
+                <p>
+                    LED TV arızaları, ekran değişimi, görüntü sorunları ve teknik
+                    servis hizmetleri profesyonel şekilde yapılmaktadır.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Kamera ve Güvenlik Sistemleri</h3>
+
+                <p>
+                    Ev, iş yeri ve işletmeler için güvenlik kamera sistemleri,
+                    kayıt cihazları ve alarm çözümleri sunuyoruz.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Dijital Uydu Sistemleri</h3>
+
+                <p>
+                    Merkezi uydu sistemleri, çanak anten kurulumu ve dijital yayın
+                    çözümleri sağlamaktayız.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Oto Ses Sistemleri</h3>
+
+                <p>
+                    Araç ses sistemleri, multimedya çözümleri ve profesyonel
+                    ses yükseltme uygulamaları yapılmaktadır.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="iletisim">
+
+    <div class="container">
+
+        <h2 class="section-title">İletişim</h2>
+
+        <div class="contact-box">
+
+            <p><strong>Firma:</strong> METE ELEKTRONİK</p>
+
+            <p><strong>Telefon:</strong> 0506 955 81 83</p>
+
+            <p>
+                <strong>ADRES</strong><br><br>
+                Cumhuriyet Mahallesi<br>
+                Sahil Sokak Osmanlı Apartmanı 2A/32<br>
+                Şabanözü / Çankırı
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 METE ELEKTRONİK - Tüm Hakları Saklıdır.
+
+</footer>
+
+</body>
+</html>
